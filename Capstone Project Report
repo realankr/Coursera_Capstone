@@ -1,0 +1,36 @@
+Introduction:
+Data Acquisition and Cleaning:
+
+a) the data I am using is from the wiki portal : https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M . THis data set has all the information of the neighbourhood data of the Toronto.
+b) Then to get the geo graphical coordinates of the neighbor hood by using the foursquare api and geopy library
+c) Other venue location are also fetched using the foursquare API
+
+The data from the wikipedia source is scarped and imported directly to the dataframe in pandas. The dataframe consisted of three columns namely PostalCode, Borough, and Neighborhood. The dataframe whose value is not null in the Borough field is considered rest data are ignored, and if there are two postal Code we conbine those two rows to one.
+
+Wiki Scraped Data:
+
+ii. Getting Latlong Data using get_latilong Function
+
+iii. Plotting the map of Scarborough using the folium library
+
+iv.  iv iv) Connecting to  Foursquare API to get data
+
+The foursquare developers client id and client secret is used to fetch the data’s needed data about different venues in different neighborhoods of that specific borough. The fetched data included are venue names, locations, menus photos etc. All the information about the prices and school near 100 meters of radius are chosen for this project. The In-formations gathered from the foursquare API are
+
+1. Neighborhood
+2. Neighborhood Latitude
+3. Neighborhood Longitude
+4. Venue
+5. Name of the venue e.g. the name of a store or restaurant
+6. Venue Latitude
+7. Venue Longitude
+8. Venue Category
+
+Results and Discussion Section
+
+
+In this project, using k-means cluster algorithm I separated the neighborhood into 10(Ten) different clusters and for 103 different lattitude and logitude from dataset, which have very-similar neighborhoods around them. Using the charts above results presented to a particular neighborhood based on average house prices and school rating have been made.
+
+I feel rewarded with the efforts and believe this course with all the topics covered is well worthy of appreciation.
+This project has shown me a practical application to resolve a real situation that has impacting personal and financial impact using Data Science tools.
+The mapping with Folium is a very powerful technique to consolidate information and make the analysis and decision better with confidence.
